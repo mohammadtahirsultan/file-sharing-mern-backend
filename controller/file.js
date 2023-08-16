@@ -10,7 +10,7 @@ export const uploadFile = async (req, res) => {
         return res.status(201).json({
             success: true,
             message: "File Uploaded",
-            path: `http://localhost:4000/download/${file._id}`
+            path: `https://file-sharing-mern-backend.vercel.app/download/${file._id}`
 
         })
     } catch (error) {
